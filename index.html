@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>W6_タブUI</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />-->
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div class="exp">
+      <h2>Flowers of the Season</h2>
+      <p>季節ごとに花を1つ紹介します。</p>
+      <p>
+        工夫したポイントは以下の3つ<br />
+        01_タブのデザイン変更<br />
+        02_タブの中にアコーディオンUIを追加<br />
+        03_写真をクリックすると、アクティブな季節の写真が拡大表示される機能追加
+      </p>
+    </div>
+    <div class="cate" id="js-btn">
+      <div class="item cate0">
+        <img
+          src="./images/spring.png"
+          width="125px"
+          height="125px"
+          alt="Spring"
+        />
+      </div>
+      <div class="item cate1">
+        <img
+          src="./images/summer.png"
+          width="125px"
+          height="125px"
+          alt="Summer"
+        />
+      </div>
+      <div class="item cate2">
+        <img
+          src="./images/autumn.png"
+          width="125px"
+          height="125px"
+          alt="Autumn"
+        />
+      </div>
+      <div class="item cate3">
+        <img
+          src="./images/winter.png"
+          width="125px"
+          height="125px"
+          alt="Winter"
+        />
+      </div>
+    </div>
+    <div class="tab" id="js-tab">
+      <div class="tab-nav">
+        <a href="" class="tab-nav-item is-active" data-nav="0">Spring</a>
+        <a href="" class="tab-nav-item" data-nav="1">Summer</a>
+        <a href="" class="tab-nav-item" data-nav="2">Autumn</a>
+        <a href="" class="tab-nav-item" data-nav="3">Winter</a>
+      </div>
+      <div class="tab-contents">
+        <div class="tab-contents-item" data-content="0">
+          <p>サクラ／桜</p>
+          バラ科（APG分類：バラ科）の落葉高木または低木で、おもに北半球の温帯と暖帯に分布する。サクラ属のうち、スモモ、モモ、ウメ、ニワウメ、ウワミズザクラなどの亜属を除いたサクラ亜属のものを一般にサクラと称し、花の美しいものが多く、日本の花の代表として外国にも知られている。なお、食用のサクランボはカラミザクラ（唐実桜）やセイヨウミザクラ（西洋実桜）などの系統のものである。日本の山野にはヤマザクラなど約10種類を基本にして、変品種をあわせると100種類ほどのサクラが野生しており、また、これらから生まれた200～300の園芸品種が知られている。江戸時代には品種が区別され、天和（てんな）元年（1681）に出た水野元勝（もとかつ）の『花壇綱目（かだんこうもく）』には「桜珍花異名の事」として40品種のサクラが載せてある。近年のものでは『最新園芸大辞典』巻5（1970、誠文堂新光社）が305品種を載せ、『サクラの品種に関する調査研究報告』（1982、日本花の会）には193品種が図説されている。
+          <br /><br />
+          <!-- アコーディオンUI -->
+          <div class="accordion" id="js-faq">
+            <p class="accordion-trigger">+ おすすめスポット</p>
+            <div class="accordion-contents">
+              おの桜づつみ回廊の桜／兵庫県<br />
+              千鳥ヶ淵緑道の桜／東京都<br />
+              高田千本桜／奈良県<br />
+            </div>
+            <p class="accordion-trigger">+ 見頃</p>
+            <div class="accordion-contents">３月下旬～４月上旬</div>
+          </div>
+        </div>
+        <div class="tab-contents-item" data-content="1">
+          <p>ブルーサルビア／ケショウサルビア</p>
+          サルビアは、とても種類が多く、ハーブのセージもサルビアの仲間なので、すべてのサルビアの品種の数は数百品種あります。毎年のように新品種が出てくるので、その数は増えるばかりです。ブルーサルビア（サルビア・ファリナセア）や赤いサルビア「スプレンデンス」は、もともとは原産地では宿根草ですが、耐寒性がないため、日本では一年草として分類されています。ただ、寒さよけさえ確保できれば、越冬する可能性も秘めている植物です。開花期間が5月～10月（東京だと11月くらいまで咲いていることも）と半年も咲いてくれる上、暑さに強い性質でありことから夏から秋にかけての花壇材料によく使われ、公園や街路などの公共花壇でもよく用いられます。
+          <br /><br />
+          <!-- アコーディオンUI -->
+          <div class="accordion" id="js-faq1">
+            <p class="accordion-trigger">+ おすすめスポット</p>
+            <div class="accordion-contents">
+              フラワーランドかみふらの／北海道<br />
+              四季彩の丘／北海道<br />
+            </div>
+            <p class="accordion-trigger">+ 見頃</p>
+            <div class="accordion-contents">８月～９月</div>
+          </div>
+        </div>
+        <div class="tab-contents-item" data-content="2">
+          <p>コスモス／秋桜</p>
+          和名は秋桜（アキザクラ）という。
+          メキシコには20種以上の野性種があるといわれている。
+          コスモスの名はコスモス属の総称としても用いられるが、一般的には大春車菊（オオハルシャギク）を指す。
+          俳句の季語は秋である。 属名の Cosmos
+          はギリシャ語の「cosmos（飾り）」からきている。 種小名の bipinnatus
+          は「2回羽状の」という意味である。
+          <br /><br />
+          <!-- アコーディオンUI -->
+          <div class="accordion" id="js-faq2">
+            <p class="accordion-trigger">+ おすすめスポット</p>
+            <div class="accordion-contents">
+              万博記念公園／大阪府<br />
+              国営ひたち海浜公園／茨城県<br />
+              太陽の丘えんがる公園／北海道<br />
+            </div>
+            <p class="accordion-trigger">+ 見頃</p>
+            <div class="accordion-contents">１０月</div>
+          </div>
+        </div>
+        <div class="tab-contents-item" data-content="3">
+          <p>ウメ／梅</p>
+          まだ寒い早春から春にかけて香りのよい花を咲かせます。梅干などの果実をとるための収穫用だけでなく、花を楽しむための園芸種も多数出回っています。花は整った５弁の花びらの一重咲きで、八重咲き種もあります。花色は赤からピンク、白色。葉は丸みの強い中ぐらいの大きさで、葉先が細長く伸び、葉縁には細かい鋸歯があります。株はやや横に広がる杯状の樹形ですが、枝垂れ種もありこちらはコンパクトにまとまります。樹皮は黒っぽく、まばらに裂けます。花つきはサクラやモモに比べて多くなく、開花期はやや落ち着いた印象です
+          <br /><br />
+          <!-- アコーディオンUI -->
+          <div class="accordion" id="js-faq3">
+            <p class="accordion-trigger">+ おすすめスポット</p>
+            <div class="accordion-contents">
+              偕楽園／茨城県<br />
+              府中市郷土の森博物館／東京都<br />
+              叶 匠壽庵 寿長生の郷／滋賀県<br />
+            </div>
+            <p class="accordion-trigger">+ 見頃</p>
+            <div class="accordion-contents">２月～３月</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="js-modal">
+      <div class="modal-inner">
+        <div class="modal-close" id="js-close-btn">&times;</div>
+        <div class="modal-contents" id="js-modal-contents">
+          <img
+            src="./images/spring.png"
+            width="480px"
+            height="480px"
+            alt="Spring"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
